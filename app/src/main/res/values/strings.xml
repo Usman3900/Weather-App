@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Stormy</string>
+    <string name="sorry">OOPs sorry</string>
+    <string name="powered_by_weather_stack">Powered by Weatherbit</string>
+    <string name="title_activity_minutely">minutelyActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
+    <string-array name="planets_array">
+
+        <item>Raleigh,US</item>
+        <item>Lahore,PK</item>
+        <item>Multan,PK</item>
+        <item>Rawalpindi,PK</item>
+        <item>Islamabad,PK</item>
+        <item>Sargodha,PK</item>
+
+    </string-array>
+
+</resources>

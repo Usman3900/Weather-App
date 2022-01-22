@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".ui.MainActivity">
+
+    <ImageButton
+        android:id="@+id/menuDots"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:onClick="showMenu"
+        android:src="@drawable/ic_overflow_holo_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/temperatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textColor="@color/white"
+        android:textSize="150sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423"
+        tools:text="@{String.valueOf(Math.round(weather.temperature))}" />
+
+    <ImageView
+        android:id="@+id/degreeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/temperatureValue"
+        app:layout_constraintTop_toTopOf="@+id/temperatureValue"
+        app:srcCompat="@drawable/degree" />
+
+    <TextView
+        android:id="@+id/timeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bwhite"
+        android:textSize="18sp"
+        android:text="At 6:55 pm, it will be"
+        app:layout_constraintBottom_toTopOf="@+id/temperatureValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/locationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Lahore, PK"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/locationValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/clear_day" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="136dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="273dp" />
+
+    <TextView
+        android:id="@+id/humidityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Humidity"
+        android:textColor="@color/bwhite"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureValue" />
+
+    <TextView
+        android:id="@+id/humidityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="87"
+        app:layout_constraintEnd_toEndOf="@+id/humidityLabel"
+        app:layout_constraintStart_toStartOf="@+id/humidityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/humidityLabel" />
+
+    <TextView
+        android:id="@+id/precipLabel"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rain/Snow"
+        android:textColor="@color/bwhite"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureValue" />
+
+    <TextView
+        android:id="@+id/precipValue"
+        android:layout_width="34dp"
+        android:layout_height="27dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="10.0"
+        app:layout_constraintEnd_toEndOf="@+id/precipLabel"
+        app:layout_constraintStart_toStartOf="@+id/precipLabel"
+        app:layout_constraintTop_toBottomOf="@+id/precipLabel" />
+
+    <TextView
+        android:id="@+id/summaryValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="Clear Sky"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidityValue" />
+
+    <TextView
+        android:id="@+id/weatherStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/powered_by_weather_stack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:textStyle="italic"
+        android:textColor="@color/bwhite"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/locationValue"
+        app:layout_constraintEnd_toEndOf="@+id/iconImageView"
+        app:layout_constraintStart_toStartOf="@+id/iconImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/refresh"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/minuteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="#40ffffff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Minutely Forecast"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherStack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="minutelyClick"
+        app:layout_constraintTop_toBottomOf="@+id/summaryValue" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/locationValue"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

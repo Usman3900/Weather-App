@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/activity_minutely.xml" value="0.18206521739130435" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/activity_saved_temperatures.xml" value="0.18297101449275363" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/activity_show_saved_temperature.xml" value="0.18297101449275363" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/list_group.xml" value="0.18297101449275363" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/minutelylayout.xml" value="0.18885869565217392" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/show_saved_temperature_actvity.xml" value="0.21467391304347827" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/spinner_list.xml" value="0.14990942028985507" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/temp.xml" value="0.264" />
+        <entry key="..\:/Copy/Stormy/app/src/main/res/layout/temperature_list.xml" value="0.18297101449275363" />
+        <entry key="..\:/Stormy/app/src/main/res/drawable-v21/app_widget_background.xml" value="0.2703125" />
+        <entry key="..\:/Stormy/app/src/main/res/drawable/ic_overflow_holo_dark.xml" value="0.2703125" />
+        <entry key="..\:/Stormy/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Stormy/app/src/main/res/layout/activity_minutely.xml" value="0.16666666666666666" />
+        <entry key="..\:/Stormy/app/src/main/res/layout/activity_saved_temperatures.xml" value="0.16666666666666666" />
+        <entry key="..\:/Stormy/app/src/main/res/layout/activity_show_saved_temperature.xml" value="0.2341485507246377" />
+        <entry key="..\:/Stormy/app/src/main/res/layout/minutelylayout.xml" value="0.16666666666666666" />
+        <entry key="..\:/Stormy/app/src/main/res/layout/temperature_list.xml" value="0.264" />
+        <entry key="..\:/Stormy/app/src/main/res/menu/popmenu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
